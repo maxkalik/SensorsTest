@@ -7,10 +7,13 @@
 
 import UIKit
 import CoreMotion
+import CoreLocation
 
 class DataViewController: UIViewController, Storyboarded {
+    
     weak var coordinator: MainCoordinator?
     
+    private var locationManger: CLLocationManager?
     var dataType: ViewControllerType? {
         didSet { title = dataType?.rawValue }
     }
@@ -22,7 +25,6 @@ class DataViewController: UIViewController, Storyboarded {
     @IBOutlet weak var yNegativeLabel: DataLabel!
     @IBOutlet weak var zLabel: DataLabel!
     
-    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         update()
@@ -30,7 +32,18 @@ class DataViewController: UIViewController, Storyboarded {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        CMMotionManager.shared.stopAccelerometerUpdates()
+        
+        switch dataType {
+        case .accelerometer:    CMMotionManager.shared.stopAccelerometerUpdates()
+        case .gyroscope:        CMMotionManager.shared.stopGyroUpdates()
+        case .deviceMotion:     CMMotionManager.shared.stopDeviceMotionUpdates()
+        case .magnetometer:     CMMotionManager.shared.stopMagnetometerUpdates()
+        case .motionActivity:   CMMotionActivityManager.shared.stopActivityUpdates()
+        case .pedometer:        CMPedometer.shared.stopUpdates()
+        case .altimeter:        CMAltimeter.shared.stopRelativeAltitudeUpdates()
+        case .location:         locationManger?.stopUpdatingLocation()
+        default: return
+        }
     }
     
     private func update() {
@@ -42,6 +55,7 @@ class DataViewController: UIViewController, Storyboarded {
         case .motionActivity:   startMotionActivity()
         case .pedometer:        startPedometr()
         case .altimeter:        startAltimeter()
+        case .location:         startGetingLocation()
         default: return
         }
     }
@@ -96,6 +110,24 @@ class DataViewController: UIViewController, Storyboarded {
         CMAltimeter.shared.startAltimeter { (pressure, altitude) in
             Helpers.showLabel(self.zLabel, with: "Altitude\n\(altitude)")
             Helpers.showLabel(self.yNegativeLabel, with: "\(pressure)\nPressure")
+        }
+    }
+}
+
+extension DataViewController: CLLocationManagerDelegate {
+    private func startGetingLocation() {
+        locationManger = CLLocationManager()
+        locationManger?.delegate = self
+        locationManger?.requestAlwaysAuthorization()
+        locationManger?.startUpdatingLocation()
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        let coordinate = manager.location?.coordinate
+        guard let lat = coordinate?.latitude, let long = coordinate?.longitude else { return }
+        Location.lookUpCurrentLocation(latitude: lat, longitude: long) { placemark in
+            let address = Location.getAddress(from: placemark)
+            Helpers.showLabel(self.zLabel, with: address)
         }
     }
 }

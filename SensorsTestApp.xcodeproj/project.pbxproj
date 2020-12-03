@@ -21,6 +21,7 @@
 		1109BF942577110500E7B38C /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109BF932577110500E7B38C /* HomeTableViewCell.swift */; };
 		1109BF992577129E00E7B38C /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109BF982577129E00E7B38C /* UILabel.swift */; };
 		1109BFA225771F3600E7B38C /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109BFA125771F3600E7B38C /* Helpers.swift */; };
+		112158DE25791CDE001A83FA /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112158DD25791CDE001A83FA /* Location.swift */; };
 		1153FFE72577201A009BE38F /* DataLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1153FFE62577201A009BE38F /* DataLabel.swift */; };
 		11A2C8DD25783DDF00521340 /* CMMotionActivityManager+Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A2C8DC25783DDF00521340 /* CMMotionActivityManager+Shared.swift */; };
 		11A2C8E12578411C00521340 /* CPPedometer+Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A2C8E02578411C00521340 /* CPPedometer+Shared.swift */; };
@@ -45,6 +46,7 @@
 		1109BF932577110500E7B38C /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		1109BF982577129E00E7B38C /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
 		1109BFA125771F3600E7B38C /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		112158DD25791CDE001A83FA /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		1153FFE62577201A009BE38F /* DataLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLabel.swift; sourceTree = "<group>"; };
 		11A2C8DC25783DDF00521340 /* CMMotionActivityManager+Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CMMotionActivityManager+Shared.swift"; sourceTree = "<group>"; };
 		11A2C8E02578411C00521340 /* CPPedometer+Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CPPedometer+Shared.swift"; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				11A2C8DC25783DDF00521340 /* CMMotionActivityManager+Shared.swift */,
 				11A2C8E02578411C00521340 /* CPPedometer+Shared.swift */,
 				11A2C8E32578532D00521340 /* CMAltimeter+Shared.swift */,
+				112158DD25791CDE001A83FA /* Location.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 				11A2C8DD25783DDF00521340 /* CMMotionActivityManager+Shared.swift in Sources */,
 				11A2C8E12578411C00521340 /* CPPedometer+Shared.swift in Sources */,
 				1109BF5A2576E2C200E7B38C /* AppDelegate.swift in Sources */,
+				112158DE25791CDE001A83FA /* Location.swift in Sources */,
 				1109BF862576F52100E7B38C /* DataViewController.swift in Sources */,
 				1109BFA225771F3600E7B38C /* Helpers.swift in Sources */,
 				1109BF5C2576E2C200E7B38C /* SceneDelegate.swift in Sources */,

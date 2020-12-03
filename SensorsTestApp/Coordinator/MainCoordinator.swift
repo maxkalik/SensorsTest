@@ -13,6 +13,7 @@ enum ViewControllerType: String, CaseIterable {
     case motionActivity = "Motion Activity"
     case pedometer = "Pedometer"
     case altimeter = "Altimeter"
+    case location = "Location"
 }
 
 import UIKit
@@ -31,6 +32,7 @@ class MainCoordinator: Coordinator {
     func start() {
         let viewController = HomeTableViewController.instantiate()
         viewController.coordinator = self
+        viewController.title = "Sensor Test"
         viewController.dataList = dataList
         navigationController.pushViewController(viewController, animated: false)
     }
@@ -48,6 +50,7 @@ class MainCoordinator: Coordinator {
         case 4: viewController.dataType = .motionActivity
         case 5: viewController.dataType = .pedometer
         case 6: viewController.dataType = .altimeter
+        case 7: viewController.dataType = .location
         default: return
         }
         

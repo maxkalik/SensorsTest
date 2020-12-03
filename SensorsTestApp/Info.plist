@@ -2,6 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Please allow to find your current location</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Please allow to find your current location</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Please allow to find your current location</string>
 	<key>NSMotionUsageDescription</key>
 	<string>Please allow Motion Usage for staps counting.</string>
 	<key>CFBundleDevelopmentRegion</key>
