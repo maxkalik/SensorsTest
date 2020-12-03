@@ -123,11 +123,8 @@ extension DataViewController: CLLocationManagerDelegate {
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        let coordinate = manager.location?.coordinate
-        guard let lat = coordinate?.latitude, let long = coordinate?.longitude else { return }
-        Location.lookUpCurrentLocation(latitude: lat, longitude: long) { placemark in
-            let address = Location.getAddress(from: placemark)
-            Helpers.showLabel(self.zLabel, with: address)
+        Location.getLocation(from: manager.location?.coordinate) { location in
+             Helpers.showLabel(self.zLabel, with: location)
         }
     }
 }
