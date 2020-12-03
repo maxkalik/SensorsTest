@@ -9,7 +9,7 @@ import UIKit
 
 class HomeTableViewController: UITableViewController, Storyboarded {
     weak var coordinator: MainCoordinator?
-    var list = ["Accelerometer", "Device Motion", "Gyroscope"]
+    var dataList = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,17 +22,16 @@ class HomeTableViewController: UITableViewController, Storyboarded {
 
 extension HomeTableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // let cell = tableView.cellForRow(at: indexPath)
-        coordinator?.toAccelerometer()
+        coordinator?.navigateToViewController(from: indexPath.row)
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return list.count
+        return dataList.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "HomeTableViewCell", for: indexPath) as? HomeTableViewCell {
-            cell.textLabel?.text = list[indexPath.row]
+            cell.textLabel?.text = dataList[indexPath.row]
             return cell
         }
         return UITableViewCell()

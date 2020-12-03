@@ -9,21 +9,47 @@
 /* Begin PBXBuildFile section */
 		1109BF5A2576E2C200E7B38C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109BF592576E2C200E7B38C /* AppDelegate.swift */; };
 		1109BF5C2576E2C200E7B38C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109BF5B2576E2C200E7B38C /* SceneDelegate.swift */; };
-		1109BF5E2576E2C200E7B38C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109BF5D2576E2C200E7B38C /* ViewController.swift */; };
 		1109BF612576E2C200E7B38C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1109BF5F2576E2C200E7B38C /* Main.storyboard */; };
 		1109BF632576E2C200E7B38C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1109BF622576E2C200E7B38C /* Assets.xcassets */; };
 		1109BF662576E2C200E7B38C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1109BF642576E2C200E7B38C /* LaunchScreen.storyboard */; };
+		1109BF732576E3BD00E7B38C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109BF722576E3BD00E7B38C /* Coordinator.swift */; };
+		1109BF772576E41C00E7B38C /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109BF762576E41C00E7B38C /* HomeTableViewController.swift */; };
+		1109BF7B2576E4DF00E7B38C /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109BF7A2576E4DF00E7B38C /* MainCoordinator.swift */; };
+		1109BF7F2576E67600E7B38C /* CMMotionManager+Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109BF7E2576E67600E7B38C /* CMMotionManager+Shared.swift */; };
+		1109BF822576E9DE00E7B38C /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109BF812576E9DE00E7B38C /* Storyboarded.swift */; };
+		1109BF862576F52100E7B38C /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109BF852576F52100E7B38C /* DataViewController.swift */; };
+		1109BF942577110500E7B38C /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109BF932577110500E7B38C /* HomeTableViewCell.swift */; };
+		1109BF992577129E00E7B38C /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109BF982577129E00E7B38C /* UILabel.swift */; };
+		1109BFA225771F3600E7B38C /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1109BFA125771F3600E7B38C /* Helpers.swift */; };
+		1153FFE72577201A009BE38F /* DataLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1153FFE62577201A009BE38F /* DataLabel.swift */; };
+		11A2C8DD25783DDF00521340 /* CMMotionActivityManager+Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A2C8DC25783DDF00521340 /* CMMotionActivityManager+Shared.swift */; };
+		11A2C8E12578411C00521340 /* CPPedometer+Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A2C8E02578411C00521340 /* CPPedometer+Shared.swift */; };
+		11A2C8E42578532D00521340 /* CMAltimeter+Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A2C8E32578532D00521340 /* CMAltimeter+Shared.swift */; };
+		11A2C8E7257866FD00521340 /* TitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A2C8E6257866FD00521340 /* TitleLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1109BF562576E2C200E7B38C /* SensorsTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SensorsTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1109BF592576E2C200E7B38C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1109BF5B2576E2C200E7B38C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1109BF5D2576E2C200E7B38C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1109BF602576E2C200E7B38C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1109BF622576E2C200E7B38C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1109BF652576E2C200E7B38C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1109BF672576E2C200E7B38C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1109BF722576E3BD00E7B38C /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		1109BF762576E41C00E7B38C /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		1109BF7A2576E4DF00E7B38C /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		1109BF7E2576E67600E7B38C /* CMMotionManager+Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CMMotionManager+Shared.swift"; sourceTree = "<group>"; };
+		1109BF812576E9DE00E7B38C /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		1109BF852576F52100E7B38C /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		1109BF932577110500E7B38C /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		1109BF982577129E00E7B38C /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
+		1109BFA125771F3600E7B38C /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		1153FFE62577201A009BE38F /* DataLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLabel.swift; sourceTree = "<group>"; };
+		11A2C8DC25783DDF00521340 /* CMMotionActivityManager+Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CMMotionActivityManager+Shared.swift"; sourceTree = "<group>"; };
+		11A2C8E02578411C00521340 /* CPPedometer+Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CPPedometer+Shared.swift"; sourceTree = "<group>"; };
+		11A2C8E32578532D00521340 /* CMAltimeter+Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CMAltimeter+Shared.swift"; sourceTree = "<group>"; };
+		11A2C8E6257866FD00521340 /* TitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +82,84 @@
 		1109BF582576E2C200E7B38C /* SensorsTestApp */ = {
 			isa = PBXGroup;
 			children = (
-				1109BF592576E2C200E7B38C /* AppDelegate.swift */,
-				1109BF5B2576E2C200E7B38C /* SceneDelegate.swift */,
-				1109BF5D2576E2C200E7B38C /* ViewController.swift */,
-				1109BF5F2576E2C200E7B38C /* Main.storyboard */,
+				1109BF9D25771CF400E7B38C /* Coordinator */,
+				1109BF9C25771C6B00E7B38C /* Helpers */,
+				1109BF972577126D00E7B38C /* Extensions */,
+				1109BF962577112E00E7B38C /* Controllers */,
+				1109BF9125770C7C00E7B38C /* Views */,
+				1109BF9E25771D1C00E7B38C /* Storyboard */,
 				1109BF622576E2C200E7B38C /* Assets.xcassets */,
-				1109BF642576E2C200E7B38C /* LaunchScreen.storyboard */,
 				1109BF672576E2C200E7B38C /* Info.plist */,
+				1109BF702576E32D00E7B38C /* Supporting Files */,
 			);
 			path = SensorsTestApp;
+			sourceTree = "<group>";
+		};
+		1109BF702576E32D00E7B38C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1109BF592576E2C200E7B38C /* AppDelegate.swift */,
+				1109BF5B2576E2C200E7B38C /* SceneDelegate.swift */,
+				1109BF642576E2C200E7B38C /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1109BF9125770C7C00E7B38C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1109BF932577110500E7B38C /* HomeTableViewCell.swift */,
+				1153FFE62577201A009BE38F /* DataLabel.swift */,
+				11A2C8E6257866FD00521340 /* TitleLabel.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1109BF962577112E00E7B38C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1109BF762576E41C00E7B38C /* HomeTableViewController.swift */,
+				1109BF852576F52100E7B38C /* DataViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1109BF972577126D00E7B38C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1109BF982577129E00E7B38C /* UILabel.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1109BF9C25771C6B00E7B38C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1109BFA125771F3600E7B38C /* Helpers.swift */,
+				1109BF7E2576E67600E7B38C /* CMMotionManager+Shared.swift */,
+				11A2C8DC25783DDF00521340 /* CMMotionActivityManager+Shared.swift */,
+				11A2C8E02578411C00521340 /* CPPedometer+Shared.swift */,
+				11A2C8E32578532D00521340 /* CMAltimeter+Shared.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		1109BF9D25771CF400E7B38C /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				1109BF722576E3BD00E7B38C /* Coordinator.swift */,
+				1109BF7A2576E4DF00E7B38C /* MainCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		1109BF9E25771D1C00E7B38C /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				1109BF5F2576E2C200E7B38C /* Main.storyboard */,
+				1109BF812576E9DE00E7B38C /* Storyboarded.swift */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +232,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1109BF5E2576E2C200E7B38C /* ViewController.swift in Sources */,
+				1109BF992577129E00E7B38C /* UILabel.swift in Sources */,
+				1109BF732576E3BD00E7B38C /* Coordinator.swift in Sources */,
+				11A2C8DD25783DDF00521340 /* CMMotionActivityManager+Shared.swift in Sources */,
+				11A2C8E12578411C00521340 /* CPPedometer+Shared.swift in Sources */,
 				1109BF5A2576E2C200E7B38C /* AppDelegate.swift in Sources */,
+				1109BF862576F52100E7B38C /* DataViewController.swift in Sources */,
+				1109BFA225771F3600E7B38C /* Helpers.swift in Sources */,
 				1109BF5C2576E2C200E7B38C /* SceneDelegate.swift in Sources */,
+				1109BF7F2576E67600E7B38C /* CMMotionManager+Shared.swift in Sources */,
+				1109BF7B2576E4DF00E7B38C /* MainCoordinator.swift in Sources */,
+				1153FFE72577201A009BE38F /* DataLabel.swift in Sources */,
+				1109BF942577110500E7B38C /* HomeTableViewCell.swift in Sources */,
+				1109BF772576E41C00E7B38C /* HomeTableViewController.swift in Sources */,
+				11A2C8E7257866FD00521340 /* TitleLabel.swift in Sources */,
+				11A2C8E42578532D00521340 /* CMAltimeter+Shared.swift in Sources */,
+				1109BF822576E9DE00E7B38C /* Storyboarded.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +324,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +379,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

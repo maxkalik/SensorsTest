@@ -37,43 +37,70 @@
             </objects>
             <point key="canvasLocation" x="-119" y="9"/>
         </scene>
-        <!--Accelerometer View Controller-->
+        <!--Data View Controller-->
         <scene sceneID="Ero-tO-zpk">
             <objects>
-                <viewController storyboardIdentifier="AccelerometerViewController" id="1dg-C0-1mU" customClass="AccelerometerViewController" customModule="SensorsTestApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DataViewController" id="1dg-C0-1mU" customClass="DataViewController" customModule="SensorsTestApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4j0-Di-a3b">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jaO-1b-pts">
-                                <rect key="frame" x="177" y="437.5" width="60" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="E7f-ha-Ih5"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.000" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jaO-1b-pts" customClass="DataLabel" customModule="SensorsTestApp" customModuleProvider="target">
+                                <rect key="frame" x="185" y="438" width="44.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9hV-T2-EOG">
-                                <rect key="frame" x="339.5" y="437.5" width="44.5" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.000" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="100" translatesAutoresizingMaskIntoConstraints="NO" id="9hV-T2-EOG" customClass="DataLabel" customModule="SensorsTestApp" customModuleProvider="target">
+                                <rect key="frame" x="339.5" y="438" width="44.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OV7-IQ-ctG">
-                                <rect key="frame" x="30" y="437.5" width="45" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.000" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="100" translatesAutoresizingMaskIntoConstraints="NO" id="OV7-IQ-ctG" customClass="DataLabel" customModule="SensorsTestApp" customModuleProvider="target">
+                                <rect key="frame" x="30" y="438" width="44.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vas-JJ-esn">
-                                <rect key="frame" x="184.5" y="74" width="45" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.000" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vas-JJ-esn" customClass="DataLabel" customModule="SensorsTestApp" customModuleProvider="target">
+                                <rect key="frame" x="185" y="74" width="44.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B2P-yf-Alu">
-                                <rect key="frame" x="185" y="811" width="44.5" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.000" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B2P-yf-Alu" customClass="DataLabel" customModule="SensorsTestApp" customModuleProvider="target">
+                                <rect key="frame" x="185" y="811.5" width="44.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="–x" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Hq-IX-fOP" customClass="TitleLabel" customModule="SensorsTestApp" customModuleProvider="target">
+                                <rect key="frame" x="30" y="468.5" width="18" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6hk-qy-n1M" customClass="TitleLabel" customModule="SensorsTestApp" customModuleProvider="target">
+                                <rect key="frame" x="375" y="468.5" width="9" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="z" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WuX-sd-haL" customClass="TitleLabel" customModule="SensorsTestApp" customModuleProvider="target">
+                                <rect key="frame" x="202.5" y="468.5" width="9" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="y" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IRT-C2-3dh" customClass="TitleLabel" customModule="SensorsTestApp" customModuleProvider="target">
+                                <rect key="frame" x="202.5" y="104.5" width="9" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="–y" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="STT-lx-sAx" customClass="TitleLabel" customModule="SensorsTestApp" customModuleProvider="target">
+                                <rect key="frame" x="197.5" y="780.5" width="19" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -83,17 +110,30 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Vas-JJ-esn" firstAttribute="centerX" secondItem="4j0-Di-a3b" secondAttribute="centerX" id="00v-Bi-8vV"/>
+                            <constraint firstItem="IRT-C2-3dh" firstAttribute="top" secondItem="Vas-JJ-esn" secondAttribute="bottom" constant="10" id="3Ch-FJ-moS"/>
+                            <constraint firstItem="WuX-sd-haL" firstAttribute="centerX" secondItem="4j0-Di-a3b" secondAttribute="centerX" id="5f3-65-uQW"/>
                             <constraint firstItem="OV7-IQ-ctG" firstAttribute="centerY" secondItem="4j0-Di-a3b" secondAttribute="centerY" id="6wy-i0-GgG"/>
+                            <constraint firstItem="0Hq-IX-fOP" firstAttribute="top" secondItem="OV7-IQ-ctG" secondAttribute="bottom" constant="10" id="7Fh-j6-hoV"/>
                             <constraint firstItem="jaO-1b-pts" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="OV7-IQ-ctG" secondAttribute="trailing" constant="8" symbolic="YES" id="P2x-7g-4eB"/>
                             <constraint firstItem="hnW-hk-adD" firstAttribute="trailing" secondItem="9hV-T2-EOG" secondAttribute="trailing" constant="30" id="Rp5-2m-JzY"/>
+                            <constraint firstItem="B2P-yf-Alu" firstAttribute="centerX" secondItem="4j0-Di-a3b" secondAttribute="centerX" id="Ssw-Hg-g9P"/>
+                            <constraint firstItem="0Hq-IX-fOP" firstAttribute="leading" secondItem="hnW-hk-adD" secondAttribute="leading" constant="30" id="WOJ-eT-9Fe"/>
                             <constraint firstItem="9hV-T2-EOG" firstAttribute="centerY" secondItem="4j0-Di-a3b" secondAttribute="centerY" id="btZ-vG-rFa"/>
                             <constraint firstItem="jaO-1b-pts" firstAttribute="centerY" secondItem="4j0-Di-a3b" secondAttribute="centerY" id="c9p-Eb-N4L"/>
                             <constraint firstItem="Vas-JJ-esn" firstAttribute="top" secondItem="hnW-hk-adD" secondAttribute="top" constant="30" id="cfZ-aF-ep5"/>
+                            <constraint firstItem="6hk-qy-n1M" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="WuX-sd-haL" secondAttribute="trailing" constant="8" symbolic="YES" id="fRQ-Qu-ZnW"/>
+                            <constraint firstItem="6hk-qy-n1M" firstAttribute="top" secondItem="9hV-T2-EOG" secondAttribute="bottom" constant="10" id="jzD-Ac-zaP"/>
                             <constraint firstItem="OV7-IQ-ctG" firstAttribute="leading" secondItem="hnW-hk-adD" secondAttribute="leading" constant="30" id="mED-LM-H1S"/>
                             <constraint firstItem="hnW-hk-adD" firstAttribute="bottom" secondItem="B2P-yf-Alu" secondAttribute="bottom" constant="30" id="mv2-Jx-shL"/>
+                            <constraint firstItem="hnW-hk-adD" firstAttribute="trailing" secondItem="6hk-qy-n1M" secondAttribute="trailing" constant="30" id="ozl-b5-QR0"/>
+                            <constraint firstItem="WuX-sd-haL" firstAttribute="top" secondItem="jaO-1b-pts" secondAttribute="bottom" constant="10" id="rlo-yJ-tpJ"/>
+                            <constraint firstItem="STT-lx-sAx" firstAttribute="centerX" secondItem="4j0-Di-a3b" secondAttribute="centerX" id="sDI-Pf-Pze"/>
+                            <constraint firstItem="B2P-yf-Alu" firstAttribute="top" secondItem="STT-lx-sAx" secondAttribute="bottom" constant="10" id="sc2-Qm-VwZ"/>
                             <constraint firstItem="jaO-1b-pts" firstAttribute="centerX" secondItem="4j0-Di-a3b" secondAttribute="centerX" id="tFc-0m-FI0"/>
+                            <constraint firstItem="IRT-C2-3dh" firstAttribute="centerX" secondItem="4j0-Di-a3b" secondAttribute="centerX" id="vAR-2p-XX9"/>
                             <constraint firstItem="B2P-yf-Alu" firstAttribute="centerX" secondItem="4j0-Di-a3b" secondAttribute="centerX" id="vKc-EO-K51"/>
                             <constraint firstItem="9hV-T2-EOG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="jaO-1b-pts" secondAttribute="trailing" constant="8" symbolic="YES" id="wVm-u0-Csa"/>
+                            <constraint firstItem="WuX-sd-haL" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="0Hq-IX-fOP" secondAttribute="trailing" constant="8" symbolic="YES" id="ze8-Ap-A5F"/>
                         </constraints>
                     </view>
                     <connections>
@@ -102,6 +142,11 @@
                         <outlet property="yNegativeLabel" destination="B2P-yf-Alu" id="f2i-tf-zbf"/>
                         <outlet property="yPositiveLabel" destination="Vas-JJ-esn" id="4ql-mf-y6j"/>
                         <outlet property="zLabel" destination="jaO-1b-pts" id="dzd-aq-j49"/>
+                        <outletCollection property="titleLablesCollection" destination="6hk-qy-n1M" collectionClass="NSMutableArray" id="xQu-em-czO"/>
+                        <outletCollection property="titleLablesCollection" destination="0Hq-IX-fOP" collectionClass="NSMutableArray" id="gWY-O5-pug"/>
+                        <outletCollection property="titleLablesCollection" destination="WuX-sd-haL" collectionClass="NSMutableArray" id="z4x-Sv-J91"/>
+                        <outletCollection property="titleLablesCollection" destination="IRT-C2-3dh" collectionClass="NSMutableArray" id="Sf0-71-5gB"/>
+                        <outletCollection property="titleLablesCollection" destination="STT-lx-sAx" collectionClass="NSMutableArray" id="P3v-Ra-bsP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zWR-Hk-PKu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
