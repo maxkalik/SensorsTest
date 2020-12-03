@@ -20,10 +20,8 @@ import UIKit
 
 class MainCoordinator: Coordinator {
     
-    private var dataList: [String] = ViewControllerType.allCases.map { $0.rawValue }
-    
-    internal var childCoordinators = [Coordinator]()
     internal var navigationController: UINavigationController
+    private var dataList: [String] = ViewControllerType.allCases.map { $0.rawValue }
     
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController

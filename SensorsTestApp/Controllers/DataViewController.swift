@@ -68,7 +68,7 @@ class DataViewController: UIViewController, Storyboarded {
     
     private func startAccelerometer() {
         Helpers.showLabels(titleLablesCollection)
-        Helpers.showHidedLabel(zLabel)
+        Helpers.showLabel(zLabel)
         CMMotionManager.shared.startAccelerometer { data in
             self.updateLabels(x: data.x, y: data.y, z: data.z)
         }
@@ -76,7 +76,7 @@ class DataViewController: UIViewController, Storyboarded {
     
     private func startGyros() {
         Helpers.showLabels(titleLablesCollection)
-        Helpers.showHidedLabel(zLabel)
+        Helpers.showLabel(zLabel)
         CMMotionManager.shared.startGyros() { data in
             self.updateLabels(x: data.x, y: data.y, z: data.z)
         }
@@ -84,7 +84,7 @@ class DataViewController: UIViewController, Storyboarded {
     
     private func startMagnetometer() {
         Helpers.showLabels(titleLablesCollection)
-        Helpers.showHidedLabel(zLabel)
+        Helpers.showLabel(zLabel)
         CMMotionManager.shared.startMagnetometer() { data in
             self.updateLabels(x: data.x, y: data.y, z: data.z)
         }

@@ -17,18 +17,18 @@ class Helpers {
         return String(format: "%.3f", value.doubleValue)
     }
     
-    static func showHidedLabel(_ label: UILabel) {
+    static func showLabel(_ label: UILabel) {
         if label.isHidden { label.isHidden = false }
     }
     
     static func showLabel(_ label: UILabel, with value: String) {
         label.text = value
-        showHidedLabel(label)
+        showLabel(label)
     }
     
     static func showLabel(_ label: UILabel, with value: Double) {
         label.text = roundToString(value)
-        showHidedLabel(label)
+        showLabel(label)
     }
     
     static func showLabels(positive: UILabel, negative: UILabel, with value: Double) {
@@ -42,7 +42,7 @@ class Helpers {
     }
     
     static func showLabels(_ labels: [UILabel]) {
-        for label in labels { showHidedLabel(label) }
+        for label in labels { showLabel(label) }
     }
     
     static func hideLablels(_ labels: [UILabel]) {
